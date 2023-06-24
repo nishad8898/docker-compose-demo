@@ -1,0 +1,27 @@
+.title-box {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-transform: uppercase;
+  border-radius: 1.5rem;
+  padding: 0.5rem;
+  box-shadow: -5px -5px 10px rgba(255, 255, 255, 0.05),
+    5px 5px 10px rgba(0, 0, 0, 0.3);
+  font-size: 3rem;
+  font-family: "Rubik Moonrocks", cursive;
+
+  .title-image {
+    height: 6rem;
+    pointer-events: none;
+    animation: App-logo-spin infinite 20s linear;
+  }
+}
+
+@keyframes App-logo-spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}

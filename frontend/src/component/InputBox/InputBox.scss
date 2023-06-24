@@ -1,0 +1,68 @@
+.input-box {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  box-shadow: -5px -5px 10px rgba(255, 255, 255, 0.05),
+    5px 5px 10px rgba(0, 0, 0, 0.3);
+  border-radius: 1.5rem;
+  margin-top: 1.2rem;
+  padding: 0.5rem;
+
+  .input-todo {
+    margin: 1rem;
+    gap: 2rem;
+    display: flex;
+    width: 90%;
+    justify-content: center;
+    align-items: center;
+
+    label {
+      text-transform: uppercase;
+      font-size: 2.5rem;
+      letter-spacing: 2px;
+      font-weight: 500;
+      font-family: "Concert One", cursive;
+      text-shadow: 0 0 7px #fff, 0 0 21px #fff, 0 0 102px #0fa, 0 0 151px #0fa;
+    }
+
+    input {
+      width: 60%;
+      height: 4.5rem;
+      border-radius: 1rem;
+      border: none;
+      background-color: #282c34;
+      box-shadow: inset -2px -2px 6px rgba(255, 255, 255, 0.05),
+        inset 2px 2px 6px rgba(0, 0, 0, 0.5);
+      padding: 0 2rem;
+      color: white;
+      font-size: 1.6rem;
+      letter-spacing: 1.5px;
+      font-family: "IBM Plex Mono", monospace;
+      font-weight: 600;
+      text-shadow: 0 0 7px #fff, 0 0 151px #0fa;
+
+      &:focus {
+        outline: none;
+      }
+    }
+
+    .input-add {
+      width: 10rem;
+      font-size: 2rem;
+      text-transform: uppercase;
+      background-image: linear-gradient(90deg, #00dbde 0%, #fc00ff 100%);
+      padding: 0.8rem 1rem;
+      border-radius: 1rem;
+      cursor: pointer;
+      letter-spacing: 1px;
+
+      &:hover {
+        background-image: linear-gradient(
+          90deg,
+          hsl(181, 100%, 54%) 0%,
+          hsl(299, 100%, 60%) 100%
+        );
+      }
+    }
+  }
+}
