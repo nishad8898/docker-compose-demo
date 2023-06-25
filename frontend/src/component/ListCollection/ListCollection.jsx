@@ -19,7 +19,7 @@ function ListCollection({ title }) {
       <div className="list-to-do">
         <div className="list-collection">
           {!taskQuery.isLoading ? (
-            taskQuery?.data.length ? (
+            taskQuery?.data?.length ? (
               taskQuery?.data.map((el, i) => (
                 <ListItem key={i} index={i} item={el} />
               ))
